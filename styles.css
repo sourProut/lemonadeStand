@@ -1,5 +1,25 @@
 body {
     background-color: rgb(73, 60, 73);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 750px 60px;
+    grid-gap: 5px;
+}
+header {
+    grid-row: 1 / 2; grid-column: 1 / span 12;
+    
+}
+nav {
+    grid-row: 2 / 3; grid-column: 1 / span 2;
+}
+main {
+    grid-row: 2 / 3; grid-column: 3 / span 8;
+}
+aside {
+    grid-row: 2 / 3; grid-column: 11 / span 2;
+}
+footer {
+    grid-row: 3 / 4; grid-column: 1 / span 12;
 }
 h1 {
     color: gold;
